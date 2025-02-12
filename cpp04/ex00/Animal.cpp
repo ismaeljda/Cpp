@@ -17,7 +17,7 @@ Animal::Animal(const Animal& other) : _type(other._type)
 
 Animal& Animal::operator=(const Animal& src)
 {
-    if (this == &src)
+    if (this != &src)
     {
       this->_type = src._type;  
     }
